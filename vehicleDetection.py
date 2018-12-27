@@ -73,10 +73,10 @@ def postProcess(frame, outs):
 
 
 
-yolo_model_path = "yolov3-tiny.h5"
-yolo_weights_path = "yolov3-tiny.weights"
-yolo_cfg_path = "yolov3-tiny.cfg"
-yolo_labels_path = "coco.names"
+yolo_model_path = "models/yolov3-tiny.h5"
+yolo_weights_path = "models/yolov3-tiny.weights"
+yolo_cfg_path = "models/yolov3-tiny.cfg"
+yolo_labels_path = "models/coco.names"
 
 with open(yolo_labels_path, 'rt') as f:
     LABELS = f.read().rstrip("\n").split("\n")

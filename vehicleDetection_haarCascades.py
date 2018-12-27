@@ -12,7 +12,7 @@ table = np.array([((i / 255.0) ** invGamma) * 255 for i in range(0, 256)]).astyp
 def gammaCorrection(image):
     return cv2.LUT(image, table)
 
-cascade = cv2.CascadeClassifier("cars.xml")
+cascade = cv2.CascadeClassifier("models/cars.xml")
 video_file = "../video 2_processed.mov"
 cap = cv2.VideoCapture(video_file)
 
